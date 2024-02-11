@@ -1,0 +1,17 @@
+# name of the workflow
+name: My First Workflow
+
+# Event: when to trigger this workflow should be here
+on: workflow_dispatch
+
+# work that needs to be done
+jobs:
+  first-job:
+    # define the runner: where the job will execute the steps (for eg: Environment)
+    # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print First Action Start
+        run: echo "First action started"
+      - name: Print First Action Ended
+        run: echo "First action finished"
