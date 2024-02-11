@@ -13,5 +13,11 @@ jobs:
     steps:
       - name: Print First Action Start
         run: echo "First action started"
+      - name: Run Multiline Shell Commands
+        run: |
+          echo "First"
+          echo "Second"
+          echo "Third"
       - name: Print First Action Ended
         run: echo "First action finished"
+        
